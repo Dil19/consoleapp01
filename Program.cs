@@ -6,11 +6,13 @@ namespace ConsoleApp1HelloWorld
     {
         static void Main(string[] args)
         {
-            byte num = 255; //largest byte
+            checked
+            {
+                byte num = 255; //largest byte
 
-            num += 1;
-            Console.WriteLine(num);
-
+                num += 1;
+                Console.WriteLine(num);
+            }
         }
     }
 }
