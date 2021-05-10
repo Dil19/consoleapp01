@@ -6,13 +6,17 @@ namespace ConsoleApp1HelloWorld
     {
         static void Main(string[] args)
         {
-            checked
-            {
-                byte num = 255; //largest byte
+            //postfix increment
+            int a = 1;
+            int b = a++;
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
 
-                num += 1;
-                Console.WriteLine(num);
-            }
+            //prefix increment
+            b = ++a;
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+
         }
     }
 }
