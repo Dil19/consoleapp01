@@ -9,13 +9,11 @@ namespace ConsoleApp1HelloWorld
             //postfix increment
             int a = 1;
             int b = a++;
-            Console.WriteLine("a = " + a);
-            Console.WriteLine("b = " + b);
+            Console.WriteLine(string.Format("a: {0}, b: {1}", a, b));
 
             //prefix increment
             b = ++a;
-            Console.WriteLine("a = " + a);
-            Console.WriteLine("b = " + b);
+            Console.WriteLine(string.Format("a: {0}, b: {1}", a, b));
 
         }
     }
